@@ -55,4 +55,11 @@ export const Image = styled.img`
 
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+    @media (max-width: 1000px) {
+        ${Item}: lasst-of-type h2 {
+            margin-bottom: 50px;
+        }
+    }
+
+`;
