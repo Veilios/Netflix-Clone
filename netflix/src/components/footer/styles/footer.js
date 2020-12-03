@@ -22,7 +22,7 @@ export const Column = styled.div`
 
 export const Row = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, lfr));
+    grid-template-columns: repeat(auto-fill, minmax(210px, lfr));
     grid-gap: 15px;
 
     @media (max-width: 1000px) {
@@ -34,7 +34,7 @@ export const Row = styled.div`
 export const Link = styled.a`
     color: #757575;
     margin-bottom: 20px;
-    font-size: 13px;
+    font-size: 14px;
     text-decoration: none;
 
 `;
