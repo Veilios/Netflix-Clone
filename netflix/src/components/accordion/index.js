@@ -34,7 +34,16 @@ Accordian.Header = function AccordianHeader({ children, ...restProps }) {
                                                 // This is used instead of just !toggleShow because it sometimes can
                                                 // be overridden if the page is handling to much state, but because of this vs code 
                                                 // thinks toggleShow is assigned but never used
-    return <Header onClick={() => setToggleShow((toggleShow) => !toggleShow)} {...restProps}>{children}</Header>;
+    return (
+        <Header onClick={() => setToggleShow((toggleShow) => !toggleShow)} {...restProps}>
+            {children}
+            {toggleShow ? (
+                <img src="/images/icons/close-slim.png" alt="Close" />
+            ) : (
+                <img src="/images/icons/add.png" alt="Open" />
+            )}
+        </Header>
+    );
 };
 
 Accordian.Body = function AccordianBody({ children, ...restProps }) {
