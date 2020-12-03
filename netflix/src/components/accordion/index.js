@@ -1,5 +1,5 @@
 import React, { useState, useContext, createContext } from 'react';
-import { Container, Frame, Title, Item, Inner, Header, Body } from './styles/accordian';
+import { Container, Title, Item, Inner, Header, Body } from './styles/accordian';
 
 const ToggleContext = createContext();
 
@@ -15,9 +15,6 @@ Accordian.Title = function AccordianTitle({ children, ...restProps }) {
     return <Title {...restProps}>{children}</Title>;
 };
 
-Accordian.Frame = function AccordianFrame({ children, ...restProps }) {
-    return <Frame {...restProps}>{children}</Frame>;
-};
 
 Accordian.Item = function AccordianItem({ children, ...restProps }) {
     const [toggleShow, setToggleShow] = useState(false);
