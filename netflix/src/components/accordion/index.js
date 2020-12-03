@@ -31,7 +31,9 @@ Accordian.Item = function AccordianItem({ children, ...restProps }) {
 
 Accordian.Header = function AccordianHeader({ children, ...restProps }) {
     const { toggleShow, setToggleShow } = useContext(ToggleContext);
-
+                                                // This is used instead of just !toggleShow because it sometimes can
+                                                // be overridden if the page is handling to much state, but because of this vs code 
+                                                // thinks toggleShow is assigned but never used
     return <Header onClick={() => setToggleShow((toggleShow) => !toggleShow)} {...restProps}>{children}</Header>;
 };
 
