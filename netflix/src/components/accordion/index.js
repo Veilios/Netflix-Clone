@@ -11,15 +11,15 @@ export default function Accordian({ children, ...restProps }) {
     );
 };
 
-Accordian.Title = function AccordianTitle({ chidlren, ...restProps }) {
+Accordian.Title = function AccordianTitle({ children, ...restProps }) {
     return <Title {...restProps}>{children}</Title>;
 };
 
-Accordian.Frame = function AccordianFrame({ chidlren, ...restProps }) {
+Accordian.Frame = function AccordianFrame({ children, ...restProps }) {
     return <Frame {...restProps}>{children}</Frame>;
 };
 
-Accordian.Item = function AccordianItem({ chidlren, ...restProps }) {
+Accordian.Item = function AccordianItem({ children, ...restProps }) {
     const [toggleShow, setToggleShow] = useState(false);
 
     return (
@@ -29,13 +29,13 @@ Accordian.Item = function AccordianItem({ chidlren, ...restProps }) {
     );
 };
 
-Accordian.Header = function AccordianHeader({ chidlren, ...restProps }) {
+Accordian.Header = function AccordianHeader({ children, ...restProps }) {
     const { toggleShow, setToggleShow } = useContext(ToggleContext);
 
     return <Header onClick={() => setToggleShow((toggleShow) => !toggleShow)} {...restProps}>{children}</Header>;
 };
 
-Accordian.Body - function AccordianBody({ children, ...restProps }) {
+Accordian.Body = function AccordianBody({ children, ...restProps }) {
     const { toggleShow } = useContext(ToggleContext);
 
     return toggleShow ? <Body {...restProps}>{children}</Body> : null;
