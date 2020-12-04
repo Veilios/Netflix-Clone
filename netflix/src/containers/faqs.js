@@ -13,15 +13,14 @@ export function FaqsContainer() {
                     <Accordian.Body>{item.body}</Accordian.Body>
                 </Accordian.Item>
             ))}
-            <Accordian.Item>
+            <Accordian.Item />
 
-                <OptForm>
-                    <OptForm.Input placeholder="Email Address" />
-                    <OptForm.Button>Try It Now</OptForm.Button>
-                    <OptForm.Text>Ready to watch? Enter your Email to create or restart your membership</OptForm.Text>
-                </OptForm>
-
-            </Accordian.Item>
+            <OptForm>
+                <OptForm.Input placeholder="Email Address" />
+                <OptForm.Button>Try It Now</OptForm.Button>
+                <OptForm.Break />
+                <OptForm.Text>Ready to watch? Enter your Email to create or restart your membership</OptForm.Text>
+            </OptForm>
         </Accordian>
     )
 };
