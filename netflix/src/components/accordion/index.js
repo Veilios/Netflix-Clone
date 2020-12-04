@@ -38,7 +38,7 @@ Accordian.Header = function AccordianHeader({ children, ...restProps }) {
                 <img src="/images/icons/close-slim.png" alt="Close" />
             ) : (
                 <img src="/images/icons/add.png" alt="Open" />
-            )}
+            )} 
         </Header>
     );
 };
