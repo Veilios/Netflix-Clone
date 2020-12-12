@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const Inner = styled.div`
     display: flex;
-    padding: 70px 45px;
+    padding: 70px 45px; 
     flex-direction: column;
     max-width: 815px;
     margin: auto;
@@ -31,7 +31,7 @@ export const Item = styled.div`
 
 export const Header = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     cursor: pointer;
     margin-bottom: 1px;
     font-size: 26px;
